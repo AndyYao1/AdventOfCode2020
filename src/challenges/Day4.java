@@ -27,6 +27,11 @@ public class Day4 {
 					}
 				}
 				c = b.readLine();
+				if(c == null) {
+					if(validFields == 7)
+						validPassports++;
+					validFields = 0;
+				}
 			}
 			b.close();
 			a.close();
